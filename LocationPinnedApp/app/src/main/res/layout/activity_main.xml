@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/databaseActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appTitle"
+        android:textColor="@color/charcoal"
+        android:textSize="30sp"
+        android:textFontWeight="10"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <!-- Button to open a file -->
+    <Button
+        android:id="@+id/fileButton"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:scrollbars="vertical"
+        android:text="@string/selectFileButton" />
+
+    <!-- TextView to display file contents -->
+    <TextView
+        android:id="@+id/fileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/fileContentsPreview"
+        android:visibility="gone" />
+
+    <!-- Button to convert lat/long pairs to addresses -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="275dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/convertButton_label"
+        android:visibility="gone" />
+
+    <!-- TextView to display converted addresses -->
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:scrollbars="vertical"
+        android:text="@string/convertPreviewLabel"
+        android:visibility="gone" />
+
+    <!-- Button to query addresses from DB -->
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="275dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/queryButton"
+        android:visibility="gone" />
+
+    <!-- EditText for address input -->
+    <EditText
+        android:id="@+id/addressTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/addressInputHint"
+        android:inputType="textPostalAddress"
+        android:visibility="gone" />
+
+    <!-- TextView to display queried lat/long results -->
+    <TextView
+        android:id="@+id/latlongTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:scrollbars="vertical"
+        android:text="@string/labelResultQuery"
+        android:visibility="gone" />
+
+    <!-- Button to view/edit/delete DB entries -->
+    <Button
+        android:id="@+id/databaseButton"
+        android:layout_width="275dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/buttonViewEditDelete"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/addAnotherFile"
+        android:layout_width="275dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Add Another File"
+        android:visibility="gone" />
+
+    <!-- TextView with instructions for viewing/editing/deleting DB entries -->
+    <TextView
+        android:id="@+id/infoStep4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/labelInstructionsForViewEditDelete"
+        android:visibility="gone" />
+</LinearLayout>

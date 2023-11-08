@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LocationPinned</string>
+    <string name="buttonNewEntry">Add New Data Entry</string>
+    <string name="DatabaseActivity_header">Add New or Update/Delete an Entry</string>
+    <string name="database_list_instructions"></string>
+    <string name="appTitle">Location Pinned App</string>
+    <string name="selectFileButton">Open Lat/Long Pairs File</string>
+    <string name="addressInputHint">Enter address to query DB</string>
+    <string name="queryButton">Query an Address From DB</string>
+    <string name="labelResultQuery">Query Address Result</string>
+    <string name="hint_address">e.g.: 2000 Simcoe St.</string>
+    <string name="label_latitude">e.g.: 21.2525</string>
+    <string name="label_long">LONGITUDE</string>
+    <string name="hint_long">e.g.: -18.4401</string>
+    <string name="label_lat">LATITUDE</string>
+    <string name="fileContentsPreview">File Content</string>
+    <string name="convertButton_label">Convert to Addresses / Save to DB</string>
+    <string name="convertPreviewLabel">List of Addresses</string>
+    <string name="save_button">Save</string>
+    <string name="delete_button">Delete</string>
+    <string name="back_button">Back</string>
+    <string name="buttonBackToMain">Back</string>
+    <string name="buttonViewEditDelete">Database Manager</string>
+    <string name="labelInstructionsForViewEditDelete"></string>
+    <string name="titleEditRecord">Edit/Delete Data Item</string>
+    <string name="id_label">DATA ID: -</string>
+    <string name="label_address">ADDRESS</string>
+</resources>
